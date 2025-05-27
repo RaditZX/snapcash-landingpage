@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 540px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 960px) {
+    .main-text{
+        font-size: 3.75rem /* 60px */;
+        line-height: 1;
+    }
+    .phone-image {
+        width: 20rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .main-text{
+        font-size: 4.5rem /* 60px */;
+        line-height: 1;
+    }
+    .phone-image {
+        width: 23rem;
+    }
+}
+
+/* XXL devices (extra large desktops, 1600px and up) */
+@media (min-width: 1600px) {
+    .main-text{
+        font-size: 5rem /* 96px */;
+        line-height: 1;
+    }
+    .phone-image {
+        width: 27rem;
+    }
+}
