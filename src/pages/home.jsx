@@ -14,16 +14,17 @@ import { FingerPrintIcon, UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
+import ReviewSection from "@/widgets/cards/ulasanSlide";
 
 export function Home() {
   return (
     <>
-      <div id="home" className="relative flex h-full p-4 lg:h-screen lg:p-0  content-center items-center justify-center pt-16 pb-32">
+      <div id="home" className="relative flex h-full p-4 lg:h-screen  lg:p-0  lg:mt-0 content-center items-center justify-center pt-16 pb-32">
         <div className="absolute top-0 h-full w-full bg-white bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-white bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
         <div className="flex flex-wrap justify-center items-center gap-3 lg:gap-0 md:mt-14 lg:mt-10   ">
-            <div className="ml-auto mr-auto w-full flex flex-col gap-3 px-4 text-left lg:w-8/12">
+            <div id="homeContent" className="ml-auto mr-auto w-full flex flex-col gap-3 px-4 text-left lg:w-8/12">
               <Typography
                 variant="h1"
                 color="black"
@@ -91,7 +92,9 @@ export function Home() {
               />
             ))}
           </div>
-        
+          <div className="mt-16 mb-16">
+            <ReviewSection/>
+          </div>
           <div id="about" className="mt-32 flex flex-row-reverse flex-wrap justify-between gap-10 items-center">
             <div className=" -mt-8 w-full lg:w-3/5 flex flex-col items-start px-4 ">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-800 p-2 text-center shadow-lg">

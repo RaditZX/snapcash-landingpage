@@ -56,7 +56,15 @@ export function Navbar({ brandName, routes, action }) {
             </Link>
           )}
         </Typography>
+
       ))}
+      <Link to="/sign-in" className="flex items-center gap-1 p-1 font-bold">
+      <Button>
+          
+            Sign In
+  
+        </Button>
+                </Link>
     </ul>
   );
 
